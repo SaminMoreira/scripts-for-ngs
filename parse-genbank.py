@@ -9,7 +9,6 @@ n = 0
 l = []
 
 for record in list(SeqIO.parse(sys.argv[1], 'genbank')):
-    print len(record)
     org = record.annotations["source"]
     for feat in genome.features:
         if feat.type == "rRNA":
