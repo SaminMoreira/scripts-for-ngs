@@ -20,7 +20,7 @@ for id in open(sys.argv[1]):
 
     sys.stdout.write("Fetching %s..." % id)
     sys.stdout.flush()
-    gbk_out_file = os.path.join(sys.argv[2], id + ".gbk")
+    gbk_out_file = os.path.join(sys.argv[2], id + ".fa")
     if os.path.exists(gbk_out_file):
         print "already fetched"
 
